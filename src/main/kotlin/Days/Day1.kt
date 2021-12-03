@@ -14,15 +14,15 @@ class Day1 {
         return findIncrease(windows);
     }
 
-    fun getDepths(): MutableList<Int> {
+    private fun getDepths(): MutableList<Int> {
         val depths = mutableListOf<Int>()
         var fileReader = FileReader()
-        val fileContent = fileReader.readResource("Input1.txt")
+        val fileContent = fileReader.readResource("input1.txt")
         fileContent.forEach{depths.add(Integer.parseInt(it))}
         return depths;
     }
 
-    fun findIncrease(depths: MutableList<Int>): Int {
+    private fun findIncrease(depths: MutableList<Int>): Int {
         var count = 0;
         for(i in 1..depths.size-1){
             if(depths.get(i) > depths.get(i-1)){
@@ -32,7 +32,7 @@ class Day1 {
         return count;
     }
 
-    fun splitIntoWindows(list: MutableList<Int>): MutableList<Int> {
+    private fun splitIntoWindows(list: MutableList<Int>): MutableList<Int> {
         var windows = mutableListOf<Int>()
         for (i in 0..list.size-3){
             windows.add(list.get(i) + list.get(i+1) + list.get(i+2))
