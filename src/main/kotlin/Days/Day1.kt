@@ -2,13 +2,15 @@ package Days
 
 import FileReader
 
-class Day1 {
-    fun challenge1(): Int {
+class Day1: Day {
+    override val DAY = 1
+
+    override fun challenge1(): Int {
         val depths = getDepths()
         return findIncrease(depths);
     }
 
-    fun challenge2(): Int {
+    override fun challenge2(): Int {
         val depths = getDepths()
         val windows = splitIntoWindows(depths)
         return findIncrease(windows);
@@ -16,8 +18,7 @@ class Day1 {
 
     private fun getDepths(): MutableList<Int> {
         val depths = mutableListOf<Int>()
-        var fileReader = FileReader()
-        val fileContent = fileReader.readResource("input1.txt")
+        val fileContent = FileReader.readResource("input1.txt")
         fileContent.forEach{depths.add(Integer.parseInt(it))}
         return depths;
     }

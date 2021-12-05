@@ -4,15 +4,17 @@ import FileReader
 import java.util.*
 import kotlin.math.pow
 
-class Day3 {
-    fun challenge1(): Int {
+class Day3: Day {
+    override val DAY = 3
+
+    override fun challenge1(): Int {
         var mostCommon = getMostCommon(getBinaryList())
         var gammaRate = getGammaRate(mostCommon)
         var epsilonRate = getEpsilonRate(mostCommon)
         return gammaRate * epsilonRate
     }
 
-    fun challenge2(): Int {
+    override fun challenge2(): Int {
         var binaryList = getBinaryList()
         var ogr = evaluateBitCriteria(binaryList, true)
         var c2r= evaluateBitCriteria(binaryList, false)
@@ -20,8 +22,7 @@ class Day3 {
     }
 
     private fun getBinaryList():List<String> {
-        var fileReader = FileReader()
-        return fileReader.readResource("input3.txt")
+        return FileReader.readResource("input3.txt")
     }
 
     private fun getMostCommon(binaryList: List<String>):String{

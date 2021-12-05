@@ -1,5 +1,7 @@
-class FileReader {
-    fun readResource(path: String):  List<String>{
-        return javaClass.getResource(path).readText().split('\n')
+open class FileReader {
+    companion object {
+        fun readResource(path: String, delimiter: String = "\n"):  List<String>{
+            return javaClass.getResource(path).readText().split(delimiter)
+        }
     }
 }

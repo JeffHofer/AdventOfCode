@@ -2,19 +2,22 @@ package Days
 
 import FileReader
 
-class Day2 {
-    fun challenge1(): Int{
+class Day2: Day {
+
+    override val DAY = 2
+
+    override fun challenge1(): Int{
         var coordinates = applyInstructions(getInstructions())
         return coordinates[0] * coordinates[1]
     }
 
-    fun challenge2(): Int{
+    override fun challenge2(): Int{
         var coordinates = applyInstructionWithAim(getInstructions())
         return coordinates[0] * coordinates[1]
     }
+
     private fun getInstructions(): List<String>{
-        var fileReader = FileReader()
-        return fileReader.readResource("input2.txt")
+        return FileReader.readResource("input2.txt")
     }
 
     private fun applyInstructions(instructions: List<String>): Array<Int>{
