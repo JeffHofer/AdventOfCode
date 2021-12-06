@@ -7,16 +7,16 @@ import Bingo.Cell
 class Day4: Day{
     override var DAY = 4
 
-    override fun challenge1(): Int {
+    override fun challenge1(): Long {
         var bingoGame = buildBingoGame("input4.txt")
         var winningBoard = bingoGame.determineWinner()
-        return winningBoard.getScore(bingoGame.lastCalled);
+        return winningBoard.getScore(bingoGame.lastCalled).toLong();
     }
 
-    override fun challenge2(): Int {
+    override fun challenge2(): Long {
         var bingoGame = buildBingoGame("input4.txt")
         var losingBoard = bingoGame.determineLoser()
-        return losingBoard.getScore(bingoGame.lastCalled);
+        return losingBoard.getScore(bingoGame.lastCalled).toLong();
     }
 
     private fun buildBingoGame(path: String): BingoGame{

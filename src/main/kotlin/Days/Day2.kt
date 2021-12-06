@@ -6,14 +6,14 @@ class Day2: Day {
 
     override val DAY = 2
 
-    override fun challenge1(): Int{
+    override fun challenge1(): Long{
         var coordinates = applyInstructions(getInstructions())
-        return coordinates[0] * coordinates[1]
+        return (coordinates[0] * coordinates[1]).toLong()
     }
 
-    override fun challenge2(): Int{
+    override fun challenge2(): Long{
         var coordinates = applyInstructionWithAim(getInstructions())
-        return coordinates[0] * coordinates[1]
+        return (coordinates[0] * coordinates[1]).toLong()
     }
 
     private fun getInstructions(): List<String>{

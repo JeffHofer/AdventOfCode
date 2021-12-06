@@ -6,16 +6,16 @@ import java.util.*
 class Day5: Day {
     override var DAY = 5
 
-    override fun challenge1(): Int {
+    override fun challenge1(): Long {
         var lines = getLines()
         var graph = plotLines(lines)
-        return countIntersections(graph)
+        return countIntersections(graph).toLong()
     }
 
-    override fun challenge2(): Int {
+    override fun challenge2(): Long {
         var lines = getLines(false)
         var graph = plotLines(lines)
-        return return countIntersections(graph);
+        return return countIntersections(graph).toLong()
     }
 
     private fun getLines(ignoreDiagonal: Boolean = true): List<Line> {

@@ -5,15 +5,15 @@ import FileReader
 class Day1: Day {
     override val DAY = 1
 
-    override fun challenge1(): Int {
+    override fun challenge1(): Long {
         val depths = getDepths()
-        return findIncrease(depths);
+        return findIncrease(depths).toLong();
     }
 
-    override fun challenge2(): Int {
+    override fun challenge2(): Long {
         val depths = getDepths()
         val windows = splitIntoWindows(depths)
-        return findIncrease(windows);
+        return findIncrease(windows).toLong();
     }
 
     private fun getDepths(): MutableList<Int> {

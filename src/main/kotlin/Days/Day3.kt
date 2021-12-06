@@ -7,18 +7,18 @@ import kotlin.math.pow
 class Day3: Day {
     override val DAY = 3
 
-    override fun challenge1(): Int {
+    override fun challenge1(): Long {
         var mostCommon = getMostCommon(getBinaryList())
         var gammaRate = getGammaRate(mostCommon)
         var epsilonRate = getEpsilonRate(mostCommon)
-        return gammaRate * epsilonRate
+        return (gammaRate * epsilonRate).toLong()
     }
 
-    override fun challenge2(): Int {
+    override fun challenge2(): Long {
         var binaryList = getBinaryList()
         var ogr = evaluateBitCriteria(binaryList, true)
         var c2r= evaluateBitCriteria(binaryList, false)
-        return ogr*c2r
+        return (ogr*c2r).toLong()
     }
 
     private fun getBinaryList():List<String> {

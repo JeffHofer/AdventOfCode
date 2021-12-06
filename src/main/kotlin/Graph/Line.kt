@@ -13,7 +13,7 @@ class Line(start: List<Int>, end: List<Int>) {
         isDiagonal = !(startCoords[0] == endCoords[0] || startCoords[1] == endCoords[1])
         pointsCovered = determinePointsCovered()
     }
-    
+
     private fun determinePointsCovered(): List<List<Int>>{
         var pointsCovered = mutableListOf<List<Int>>()
 
