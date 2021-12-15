@@ -13,7 +13,9 @@ fun main(args: Array<String>) {
 //    evaluateDay(Day9())
 //    evaluateDay(Day10())
 //    evaluateDay(Day11())
-    evaluateDay(Day12())
+//    evaluateDay(Day12())
+//    evaluateDay(Day13())
+    evaluateDay(Day14())
 }
 
 fun evaluateDay(day: Day){
