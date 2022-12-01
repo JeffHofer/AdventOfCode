@@ -3,7 +3,7 @@ import java.util.*
 
 fun main(args: Array<String>) {
 //    evaluateDay(Day1())
-//    evaluateDay(Day2())
+    evaluateDay(Day2())
 //    evaluateDay(Day3())
 //    evaluateDay(Day4())
 //    evaluateDay(Day5())
@@ -15,7 +15,8 @@ fun main(args: Array<String>) {
 //    evaluateDay(Day11())
 //    evaluateDay(Day12())
 //    evaluateDay(Day13())
-    evaluateDay(Day14())
+//    evaluateDay(Day14())
+//    evaluateDay(Day15())
 }
 
 fun evaluateDay(day: Day){
