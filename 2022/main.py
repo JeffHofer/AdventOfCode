@@ -6,6 +6,7 @@ from daysolvers.day5 import Day5Solver
 from daysolvers.day6 import Day6Solver
 from daysolvers.day7 import Day7Solver
 from daysolvers.day8 import Day8Solver
+from daysolvers.day9 import Day9Solver
 
 
 def main():
@@ -17,6 +18,7 @@ def main():
     Day6Solver().print_solutions()
     Day7Solver().print_solutions()
     Day8Solver().print_solutions()
+    Day9Solver().print_solutions()
 
 
 if __name__ == "__main__":
