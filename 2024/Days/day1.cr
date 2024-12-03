@@ -3,7 +3,6 @@ class Day1
     puts "Day 1:\n - Part 1: #{part_1_solution}\n - Part 2: #{part_2_solution}"
   end
 
-
   private def self.part_1_solution
     list1, list2 = get_input_lists
     list1 = list1.sort!
