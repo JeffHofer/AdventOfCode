@@ -7,6 +7,7 @@ require "./Days/day6.cr"
 require "./Days/day7.cr"
 require "./Days/day8.cr"
 require "./Days/day9.cr"
+require "./Days/day10.cr"
 
 print_all_solutions
 
@@ -19,6 +20,7 @@ def print_all_solutions()
   # Day6.print_solution
   # Day7.print_solution
   # Day8.print_solution
-  Day9.print_solution
+  # Day9.print_solution
+  Day10.print_solution
 
 end
