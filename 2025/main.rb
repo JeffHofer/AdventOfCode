@@ -5,6 +5,7 @@ require_relative 'Days/Day4'
 require_relative 'Days/Day5'
 require_relative 'Days/Day6'
 require_relative 'Days/Day7'
+require_relative 'Days/Day8'
 
 puts("Day 1:")
 puts(" - #{Day1.solve_part1}")
@@ -34,3 +35,8 @@ puts(" - #{Day6.solve_part2}")
 puts("Day 7:")
 puts(" - #{Day7.solve_part1}")
 puts(" - #{Day7.solve_part2}")
+
+puts("Day 8:")
+puts(" - #{Day8.solve_part1}")
+puts(" - #{Day8.solve_part2}")
+
